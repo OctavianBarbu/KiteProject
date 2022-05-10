@@ -1,0 +1,32 @@
+<div class="container">
+    <table class="table shadow mt-3">
+
+      <thead>
+
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Wind Prob.</th>
+            <th>When to go</th>
+        </tr>
+
+      </thead>
+
+
+      <tbody>
+
+        <tr *ngFor="let spot of spotData">
+          <td>{{spot.name}}</td>
+          <td>{{spot.country}}</td>
+          <td>{{spot.lat}}</td>
+          <td>{{spot.long}}</td>
+          <td>{{spot.probability}}%</td>
+          <td>{{spot.month}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+</div>
+
